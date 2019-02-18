@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/a"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="上传本地文件"
+        android:textSize="15dp"
+        android:background="@mipmap/button"
+
+        android:textColor="#FFFFFF"
+
+        />
+    <Button
+        android:id="@+id/b"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="同步云端文件"
+        android:background="@mipmap/button"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+
+        />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/edit"
+            android:text="File"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/file"
+            android:layout_alignParentLeft="true"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/menu2"
+            android:text="Cloud"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/cloud"
+            android:layout_toRightOf="@id/edit"
+            android:layout_toLeftOf="@id/effect"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/effect"
+            android:text="User"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/user"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout1">
+
+        <Button
+            android:id="@+id/import_file"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="导入文件"
+            android:background="#FFFFFF"
+            android:textSize="15dp"
+            android:textColor="#000000"
+
+            />
+
+        <Button
+            android:id="@+id/b"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="选择"
+            android:background="#FFFFFF"
+            android:textSize="15dp"
+            android:textColor="#000000"
+
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/relativelayout1"
+        android:id="@+id/filelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:layout_above="@+id/linear1"/>
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/edit"
+            android:text="File"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/file"
+            android:layout_alignParentLeft="true"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/menu2"
+            android:text="Cloud"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/cloud"
+            android:layout_toRightOf="@id/edit"
+            android:layout_toLeftOf="@id/effect"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/effect"
+            android:text="User"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/user"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
