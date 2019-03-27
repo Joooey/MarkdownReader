@@ -64,7 +64,7 @@
         android:layout_alignParentBottom="true"
         >
         <TextView
-            android:id="@+id/edit"
+            android:id="@+id/file"
             android:text="File"
             android:gravity="center_horizontal"
             android:drawableTop="@mipmap/file"
@@ -74,18 +74,18 @@
             >
         </TextView>
         <TextView
-            android:id="@+id/menu2"
+            android:id="@+id/cloud"
             android:text="Cloud"
             android:gravity="center_horizontal"
             android:drawableTop="@mipmap/cloud"
-            android:layout_toRightOf="@id/edit"
-            android:layout_toLeftOf="@id/effect"
+            android:layout_toRightOf="@id/file"
+            android:layout_toLeftOf="@id/user"
             android:layout_width="80dip"
             android:layout_height="wrap_content"
             >
         </TextView>
         <TextView
-            android:id="@+id/effect"
+            android:id="@+id/user"
             android:text="User"
             android:gravity="center_horizontal"
             android:drawableTop="@mipmap/user"

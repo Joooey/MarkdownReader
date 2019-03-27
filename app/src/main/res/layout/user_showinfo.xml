@@ -111,7 +111,7 @@
 
         >
         <TextView
-            android:id="@+id/edit"
+            android:id="@+id/file"
             android:text="File"
             android:textColor="#FFFFFF"
             android:gravity="center_horizontal"
@@ -123,20 +123,20 @@
             >
         </TextView>
         <TextView
-            android:id="@+id/menu2"
+            android:id="@+id/cloud"
             android:text="Cloud"
             android:gravity="center_horizontal"
             android:layout_alignParentBottom="true"
             android:textColor="#FFFFFF"
             android:drawableTop="@mipmap/cloud_white"
-            android:layout_toRightOf="@id/edit"
-            android:layout_toLeftOf="@id/effect"
+            android:layout_toRightOf="@id/file"
+            android:layout_toLeftOf="@id/user"
             android:layout_width="80dip"
             android:layout_height="wrap_content"
             >
         </TextView>
         <TextView
-            android:id="@+id/effect"
+            android:id="@+id/user"
             android:text="User"
             android:gravity="center_horizontal"
             android:drawableTop="@mipmap/user_white"
