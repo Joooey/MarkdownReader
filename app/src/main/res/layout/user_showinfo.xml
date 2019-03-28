@@ -129,9 +129,8 @@
             android:layout_alignParentBottom="true"
             android:textColor="#FFFFFF"
             android:drawableTop="@mipmap/cloud_white"
-            android:layout_toRightOf="@id/file"
-            android:layout_toLeftOf="@id/user"
-            android:layout_width="80dip"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
         </TextView>

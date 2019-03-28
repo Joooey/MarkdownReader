@@ -1,6 +1,5 @@
 package com.nuaa.wjyyy.markdownreader;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -14,8 +13,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.nuaa.wjyyy.markdownreader.R.id.file;
-import static com.nuaa.wjyyy.markdownreader.R.id.user;
 
 public class MainActivity extends Activity {
 
@@ -43,13 +40,7 @@ public class MainActivity extends Activity {
                 setContentView(R.layout.user_showinfo);
             }
         });
-//        fileButton=findViewById(R.id.file);
-//        fileButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                setContentView(R.layout.filelist_layout);
-//            }
-//        });
+
         cloudButton=findViewById(R.id.cloud);
         cloudButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,23 +51,21 @@ public class MainActivity extends Activity {
 
 
 
-//        fileListViewAdapter = new FileListViewAdapter(this);
-//
-//        fileListView = findViewById(R.id.filelist);
-//        fileListView.setAdapter(fileListViewAdapter);
-//
-//        chooseFileButton = findViewById(R.id.import_file);
-//        chooseFileButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//              //  showFileChooser();
-//                Intent intent = new Intent(MainActivity.this, ReaderActivity.class);
-//
-//               // intent.putExtra("path", p);
-//
-//                MainActivity.this.startActivity(intent);
-//            }
-//        });
+        fileListViewAdapter = new FileListViewAdapter(this);
+
+        fileListView = findViewById(R.id.filelist);
+        fileListView.setAdapter(fileListViewAdapter);
+
+        chooseFileButton = findViewById(R.id.import_file);
+        chooseFileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showFileChooser();
+                Intent intent = new Intent(MainActivity.this, ReaderActivity.class);
+
+                MainActivity.this.startActivity(intent);
+            }
+        });
 
 
     }
